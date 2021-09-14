@@ -1,4 +1,4 @@
-#(©)Codexbotz
+#(©)Codexbot
 
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -94,7 +94,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>Kamu wajib join ke Channel/Grup Sebelum menggunakan Bot\n\nSilakan Join Channel Dulu</b>"
+    text = "<b>Silakan Join Channel </b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
